@@ -46,12 +46,12 @@ class Product():
             elif self.weight == "Ligero":
                 print("Producto alimenticio ligero: Manejar con cuidado estándar")
 
-        elif self.code == "Productos Electrónicos":
+        if self.code == "Productos Electrónicos":
             if self.fragility == "Fragil":
                 print("Producto electrónico frágil: Manejar con cuidado")
             elif self.fragility != "Fragil" and self.weight == "Pesado":
                 print("Producto electrónico no frágil: Manejo estándar")
-            elif self.fragility != "Fragil" and self.weight == "Mediano" or self.weight == "Ligero":
+            elif self.fragility != "Fragil" and (self.weight == "Mediano" or self.weight == "Ligero"):
                     print("Producto electrónico no frágil: Manejo estándar")
     
         if self.code == "Otros productos":

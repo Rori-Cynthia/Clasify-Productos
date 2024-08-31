@@ -5,15 +5,15 @@ class Product():
         self.fragility = input_fragility
 
     products_code = {
-            "A": "Productos Alimenticios",
-            "B": "Productos Electrónicos",
-            "C": "Otros Productos",
-            }
+        "A": "Productos Alimenticios",
+        "B": "Productos Electrónicos",
+        "C": "Otros Productos",
+    }
     
     products_fragility = {
-            "F": "Fragil",
-            "N": "No fragil",
-        }
+        "F": "Fragil",
+        "N": "No fragil",
+    }
 
     def evaluate_input(self):    
         if self.code not in self.products_code or self.fragility not in self.products_fragility:
